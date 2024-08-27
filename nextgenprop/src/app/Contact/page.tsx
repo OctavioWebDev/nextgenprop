@@ -66,7 +66,7 @@ export default function ContactForm() {
     return (
         <div className="flex flex-col p-8 border-4 border-white min-h-screen bg-gray-600">
             <div className="min-h-screen flex flex-col justify-center items-center px-4">
-                <div className="bg-black bg-opacity-50 p-6 rounded-lg max-w-2xl w-full mb-10">
+                <div className="bg-black bg-opacity-50 p-6 max-w-2xl w-full mb-10">
                     <h1 className="text-white text-2xl mb-4">Contact Us</h1>
                     <p className="mb-8 text-gray-300 text-center">
                         Have a commercial construction project in mind? We're here to bring your vision to life with expert craftsmanship and dedicated service. Whether you're planning a new build, renovation, or expansion, reach out to us today to discuss how we can make your project a success. Let’s create something exceptional together.
