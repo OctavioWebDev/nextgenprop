@@ -161,7 +161,7 @@ export default function ContactForm() {
                         <span className="icon-phone mr-2"></span>
                         <div>
                             <p className="text-sm">Call us:</p>
-                            <p className="text-gray-300">+1 (419)481-3567</p>
+                            <p className="text-gray-300">+1 (419) 381-1855</p>
                         </div>
                     </div>
                 </div>
