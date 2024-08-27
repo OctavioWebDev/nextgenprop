@@ -25,7 +25,7 @@ const HeroSection = () => {
         </h1>
         <p className="text-xl sm:text-2xl mb-8 max-w-3xl mx-auto animate-fade-in-delay">
         At Next Generation Properties, we are dedicated to delivering commercial construction services with integrity and excellence. Founded in 2016 by Mario Dominguez, our mission is to create a lasting legacy for future generations, rooted in Christian values and family commitment.        </p>
-        <Link href="/properties" className="bg-gray-800 hover:bg-gray-950 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300">
+        <Link href="/Contact" className="bg-gray-800 hover:bg-gray-950 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300">
         Discover Our Services
         </Link>
       </div>
