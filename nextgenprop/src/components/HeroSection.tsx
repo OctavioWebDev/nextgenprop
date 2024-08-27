@@ -4,14 +4,14 @@ import Link from 'next/link';
 const HeroSection = () => {
   return (
     <div className="relative h-screen flex items-center justify-center bg-gray-600">
-      {/* <Image
-        src="/hero-background.jpg"
+      <Image
+        src="/images/glass-city-metropark-drone-2.jpg"
         alt="Next Generation Properties Hero"
         fill
         className="object-cover z-0"
         quality={100}
       />
-      <div className="absolute inset-0 bg-black opacity-50 z-10"></div> */}
+      <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
       <div className="z-20 text-center text-white px-4 sm:px-6 lg:px-8">
         <Image
           src="/logos/NextGeneration/1.svg"
