@@ -29,13 +29,13 @@ const AboutSection = () => {
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">About Next Generation Properties</h2>
             <div className="space-y-4 text-gray-700">
               <p>
-                Next Generation Properties was founded in 2016 by Mario Dominguez, a devoted father and man of faith, with a vision to build a lasting legacy for his sons. Rooted in Christian values, our company is more than just a real estate business; it is a testament to the importance of family, faith, and passing on something meaningful to the next generation.
+                Founded in 2016 by Mario Dominguez, Next Generation Properties is a family-driven commercial construction company rooted in Christian values. Mario, a devoted father and man of faith, started the company with a vision to create a lasting legacy through quality construction that stands the test of time.
               </p>
               <p>
-                At Next Generation Properties, we believe in serving our clients with integrity, commitment, and excellence. Our approach is guided by the principle that all work should be done as if for the Lord, and this philosophy permeates everything we do—from the properties we manage to the relationships we build.
+                At Next Generation Properties, our mission is to build more than just structures; we build trust, integrity, and excellence into every project. Guided by the belief that all work should be done with the highest standards of craftsmanship and commitment, we approach each project with a dedication to serving our clients' needs and exceeding their expectations.
               </p>
               <p>
-                We are dedicated to providing high-quality real estate services while upholding the values that have been passed down through generations. Whether you're looking to buy, sell, or rent a property, we are here to guide you every step of the way with honesty, transparency, and a heart for service.
+                From concept to completion, we are dedicated to delivering commercial construction services that reflect our core values—honesty, transparency, and a deep respect for the communities we serve. Whether you're embarking on a new build, renovation, or expansion, we stand ready to guide you every step of the way with a commitment to quality and a heart for service.
               </p>
             </div>
           </div>
@@ -55,3 +55,4 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+

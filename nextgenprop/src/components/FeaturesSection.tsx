@@ -21,24 +21,39 @@ const FeaturesSection = () => {
     {
       imageSrc: "/images/redd-f-sejLyCD2UQE-unsplash.jpg",
       title: "Custom Construction Solutions",
-      description: "We offer tailored construction services that meet the unique needs of your commercial project. Whether you’re building a new facility or renovating an existing structure, we work closely with you to ensure your vision is brought to life with precision and care."
+      description: "We provide tailored construction services to meet the specific needs of your commercial project. From new builds to renovations, our team ensures that every detail aligns with your business objectives and vision."
     },
     {
-      imageSrc: "/images/thays-orrico-JaOOQIfRC5I-unsplash.jpg",
-      title: "Community-Focused Listings",
-      description: "We understand the importance of finding a home within a supportive and thriving community. That's why we prioritize properties in neighborhoods that foster a sense of belonging, safety, and shared values. We provide detailed insights into the local community, schools, and amenities to help you make an informed decision."
+      imageSrc: "/images/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg",
+      title: "Comprehensive Project Management",
+      description: "Our experienced project managers oversee every phase of your construction project. We manage timelines, budgets, and quality control to ensure a smooth and successful completion."
     },
     {
       imageSrc: "/images/tim-graf-ErO0E8wZaTA-unsplash.jpg",
-      title: "Experienced Project Management",
-      description: "With years of experience in commercial construction, our team provides comprehensive project management from start to finish. We handle every detail, ensuring that your project is completed on time, within budget, and to the highest standards."
+      title: "Facility Maintenance and Upgrades",
+      description: "Beyond construction, we offer ongoing maintenance and upgrade services to keep your commercial facilities in top condition. Whether you need repairs, updates, or routine maintenance, we are here to support your business."
+    },
+    {
+      imageSrc: "/images/kier-in-sight-archives-Fz-FzC5t0Q8-unsplash.jpg",
+      title: "Tenant Improvement Services",
+      description: "We specialize in tenant improvements, providing custom build-outs and modifications to existing commercial spaces. Whether you're adapting a space for a new tenant or upgrading it to better suit your business needs, we deliver results that align with your vision."
+    },
+    {
+      imageSrc: "/images/mediamodifier-I3HPUolh5hA-unsplash.jpg",
+      title: "Pre-Construction Planning",
+      description: "Our pre-construction services include site evaluation, budgeting, and planning to ensure your project is set up for success from the start. We work with you to anticipate challenges and develop strategies that keep your project on track."
+    },
+    {
+      imageSrc: "/images/nick-fewings-MDJw_vIjTlQ-unsplash.jpg",
+      title: "Design-Build Services",
+      description: "We offer integrated design-build services, streamlining the construction process by combining the design and construction phases under one contract. This approach ensures cohesive project management, faster completion times, and cost savings for our clients."
     }
   ];
 
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl text-black font-bold text-center mb-12">Set Apart</h2>
+        <h2 className="text-3xl text-black font-bold text-center mb-12">Our Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <FeatureCard key={index} {...feature} />

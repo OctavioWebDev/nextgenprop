@@ -19,19 +19,19 @@ const BenefitCard = ({ imageSrc, title, description }: { imageSrc: string; title
 const BenefitsSection = () => {
   const benefits = [
     {
-      imageSrc: "/images/aaron-burden-I57ErM93uZQ-unsplash.jpg",
+      imageSrc: "/images/jesse-orrico-L94dWXNKwrY-unsplash.jpg",
       title: "Integrity",
-      description: "Our commitment to Christian values means that integrity is at the core of our construction projects. We believe in honest, transparent dealings with all our clients, ensuring that your experience with us is built on trust and reliability."
+      description: "We build our reputation on honesty and transparency. Every project is a promise to deliver what we’ve committed to, ensuring your trust is earned and valued at every step."
     },
     {
       imageSrc: "/images/45926897_10217805970360567_3330581532699000832_n.jpg",
       title: "Service",
-      description: "As a family-operated business, we understand the importance of creating structures that stand the test of time. We treat every project with the same care and dedication as if we were building for our own family, ensuring that your vision becomes a reality."
+      description: "We treat every project as if it were our own. Your vision is our mission, and we are dedicated to turning it into a reality with the utmost care and professionalism."
     },
     {
-      imageSrc: "/images/christian-lue-xr_j6zesBUE-unsplash.jpg",
+      imageSrc: "/images/cory-woodward-JUqmfHPJNE8-unsplash.jpg",
       title: "Quality",
-      description: "Founded by Mario Dominguez with the vision of passing on a lasting legacy, Next Generation Properties is dedicated to excellence in every aspect of our work. Our commitment to quality ensures that your construction project is completed to the highest standards, providing a strong foundation for future generations."
+      description: "Excellence is our standard. From the materials we choose to the craftsmanship we apply, every detail is handled with precision, ensuring your project stands strong for years to come."
     }
   ];
 
