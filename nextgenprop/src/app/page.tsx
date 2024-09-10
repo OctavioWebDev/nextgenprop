@@ -4,7 +4,7 @@ import BenefitsSection from '../components/BenefitsSection';
 import FeaturesSection from '../components/FeaturesSection';
 import TestimonialSection from '../components/TestimonialSection';
 import CallToActionSection from '../components/CallToActionSection';
-
+import LogoSection from '../components/LogoSection';
 export default function Home() {
   return (
     <main>
@@ -14,6 +14,7 @@ export default function Home() {
       <FeaturesSection />
       <TestimonialSection />
       <CallToActionSection />
+      <LogoSection />
     </main>
   );
 }
