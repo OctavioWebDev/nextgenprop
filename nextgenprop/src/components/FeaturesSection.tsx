@@ -10,8 +10,8 @@ const FeatureCard = ({ imageSrc, title, description }: { imageSrc: string; title
       className="w-full object-cover"
     />
     <div className="p-6">
-      <h3 className="text-xl font-bold mb-3">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+      <h3 className="text-2xl text-center text-gray-600 font-bold">{title}</h3>
+      <p className="text-gray-600 p-6">{description}</p>
     </div>
   </div>
 );
@@ -19,7 +19,7 @@ const FeatureCard = ({ imageSrc, title, description }: { imageSrc: string; title
 const FeaturesSection = () => {
   const features = [
     {
-      imageSrc: "/images/redd-f-sejLyCD2UQE-unsplash.jpg",
+      imageSrc: "/images/Maccord&Central/IMG_8277.JPG",
       title: "Custom Construction Solutions",
       description: "We provide tailored construction services to meet the specific needs of your commercial project. From new builds to renovations, our team ensures that every detail aligns with your business objectives and vision."
     },
@@ -29,12 +29,12 @@ const FeaturesSection = () => {
       description: "Our experienced project managers oversee every phase of your construction project. We manage timelines, budgets, and quality control to ensure a smooth and successful completion."
     },
     {
-      imageSrc: "/images/tim-graf-ErO0E8wZaTA-unsplash.jpg",
+      imageSrc: "/images/Maccord&Central/IMG_8279.JPG",
       title: "Facility Maintenance and Upgrades",
       description: "Beyond construction, we offer ongoing maintenance and upgrade services to keep your commercial facilities in top condition. Whether you need repairs, updates, or routine maintenance, we are here to support your business."
     },
     {
-      imageSrc: "/images/kier-in-sight-archives-Fz-FzC5t0Q8-unsplash.jpg",
+      imageSrc: "/images/Maccord&Central/IMG_8491.JPG",
       title: "Tenant Improvement Services",
       description: "We specialize in tenant improvements, providing custom build-outs and modifications to existing commercial spaces. Whether you're adapting a space for a new tenant or upgrading it to better suit your business needs, we deliver results that align with your vision."
     },
@@ -44,7 +44,7 @@ const FeaturesSection = () => {
       description: "Our pre-construction services include site evaluation, budgeting, and planning to ensure your project is set up for success from the start. We work with you to anticipate challenges and develop strategies that keep your project on track."
     },
     {
-      imageSrc: "/images/nick-fewings-MDJw_vIjTlQ-unsplash.jpg",
+      imageSrc: "/images/NagoyaPerrysburg/NAGOYA PERRYSBURG.jpg",
       title: "Design-Build Services",
       description: "We offer integrated design-build services, streamlining the construction process by combining the design and construction phases under one contract. This approach ensures cohesive project management, faster completion times, and cost savings for our clients."
     }

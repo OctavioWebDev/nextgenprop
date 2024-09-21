@@ -10,7 +10,7 @@ const BenefitCard = ({ imageSrc, title, description }: { imageSrc: string; title
       className="w-full object-cover"
     />
     <div className="p-6">
-      <h3 className="text-xl font-bold mb-3">{title}</h3>
+      <h3 className="text-2xl text-center text-gray-600  font-bold mb-3">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </div>
   </div>
@@ -19,17 +19,17 @@ const BenefitCard = ({ imageSrc, title, description }: { imageSrc: string; title
 const BenefitsSection = () => {
   const benefits = [
     {
-      imageSrc: "/images/jesse-orrico-L94dWXNKwrY-unsplash.jpg",
+      imageSrc: "/images/BenchMark/20171106-183809-largejpg.jpg",
       title: "Integrity",
       description: "We build our reputation on honesty and transparency. Every project is a promise to deliver what we’ve committed to, ensuring your trust is earned and valued at every step."
     },
     {
-      imageSrc: "/images/45926897_10217805970360567_3330581532699000832_n.jpg",
+      imageSrc: "/images/BenchMark/ls.jpg",
       title: "Service",
       description: "We treat every project as if it were our own. Your vision is our mission, and we are dedicated to turning it into a reality with the utmost care and professionalism."
     },
     {
-      imageSrc: "/images/cory-woodward-JUqmfHPJNE8-unsplash.jpg",
+      imageSrc: "/images/BenchMark/l.jpg",
       title: "Quality",
       description: "Excellence is our standard. From the materials we choose to the craftsmanship we apply, every detail is handled with precision, ensuring your project stands strong for years to come."
     }
