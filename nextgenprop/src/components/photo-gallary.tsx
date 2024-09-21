@@ -61,10 +61,15 @@ interface PhotoGalleryProps {
 }
 
 export default function PhotoGalleryComponent({ photos, columns = 3 }: PhotoGalleryProps) {
+  const allPhotos = photos.flat()
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
+      <div className="md:hidden">
+        <PhotoTile photos={allPhotos} />
+      </div>
       {photos.map((photoGroup, index) => (
-        <div key={index} className={`${index > 0 ? 'hidden md:block' : ''}`}>
+        <div key={index} className="hidden md:block">
           <PhotoTile photos={photoGroup} />
         </div>
       ))}
