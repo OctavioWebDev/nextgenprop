@@ -41,11 +41,11 @@ const AboutSection = () => {
           </div>
           <div className="lg:w-1/2 flex justify-center lg:justify-end">
             <Image
-              src="/images/117180611_10223613216338087_3212582951053983145_n.jpg"
+              src="/logos/NextGeneration/1.svg"
               alt="Next Generation Properties Logo"
               width={400}
               height={400}
-              className="rounded-lg shadow-lg"
+              className="rounded-full bg-gray-600 shadow-lg"
             />
           </div>
         </div>
