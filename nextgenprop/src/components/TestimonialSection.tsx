@@ -6,17 +6,17 @@ const scriptures = [
   {
     text: "Whatever you do, work at it with all your heart, as working for the Lord, not for human masters.",
     reference: "Colossians 3:23",
-    image: "/logos/NextGeneration/1.svg"
+    image: "/logos/NPGLogo002.png"
   },
   {
     text: "And let us not grow weary of doing good, for in due season we will reap, if we do not give up.",
     reference: "Galatians 6:9",
-    image: "/logos/NextGeneration/1.svg"
+    image: "/logos/NPGLogo002.png"
   },
   {
     text: "The plans of the diligent lead surely to abundance, but everyone who is hasty comes only to poverty.",
     reference: "Proverbs 21:5",
-    image: "/logos/NextGeneration/1.svg"
+    image: "/logos/NPGLogo002.png"
   }
 ];
 
@@ -44,8 +44,8 @@ const ScriptureSection = () => {
               <Image
                 src={scriptures[currentScripture].image}
                 alt="Next Generation Properties Logo"
-                width={64}
-                height={64}
+                width={100}
+                height={100}
                 className="rounded-full mb-2"
               />
               <p className="font-semibold text-white">{scriptures[currentScripture].reference}</p>

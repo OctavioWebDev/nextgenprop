@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Hammersmith_One } from 'next/font/google';
+import { Alice } from 'next/font/google';
 import "./globals.css";
 import Head from "next/head";
 
-const hammersmithOne = Hammersmith_One({
+const alice = Alice({
   weight: '400',
   subsets: ['latin'],
 });
@@ -21,12 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-       <link rel="svg" href="/icon.svg" sizes="any" />
+      <link rel="icon" href="/logos/NextGeneration/LgNPGLogo.png" sizes="500x500" type="image/png" />
       </Head>
-      <body className={hammersmithOne.className}>
+      <body className={alice.className}>
         {children}
       </body>
     </html>
   );
 }
-

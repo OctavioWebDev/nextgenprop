@@ -22,30 +22,26 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-16 bg-gray-100">
+    <section ref={sectionRef} className="py-16 bg-gray-700">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 lg:pr-12 mb-8 lg:mb-0 fade-in-section">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">About Next Generation Properties</h2>
-            <div className="space-y-4 text-gray-700">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">About Next Generation Properties</h2>
+            <div className="space-y-4 text-white">
               <p>
-                Founded in 2016 by Mario Dominguez, Next Generation Properties is a family-driven commercial construction company rooted in Christian values. Mario, a devoted father and man of faith, started the company with a vision to create a lasting legacy through quality construction that stands the test of time.
-              </p>
+              Next Generation Properties is a commercial property maintenance company offering a wide range of services, including restoration, mitigation, remodeling, and repair. Founded in 2016, our company is rooted in Christian values, with a mission to build more than just structures—we build trust, integrity, and excellence into every project.              </p>
               <p>
-                At Next Generation Properties, our mission is to build more than just structures; we build trust, integrity, and excellence into every project. Guided by the belief that all work should be done with the highest standards of craftsmanship and commitment, we approach each project with a dedication to serving our clients' needs and exceeding their expectations.
-              </p>
+              At Next Generation Properties, we believe that all work should meet the highest standards of craftsmanship and commitment. We approach each project with a dedication to serving our clients' needs and exceeding their expectations.              </p>
               <p>
-                From concept to completion, we are dedicated to delivering commercial construction services that reflect our core values—honesty, transparency, and a deep respect for the communities we serve. Whether you're embarking on a new build, renovation, or expansion, we stand ready to guide you every step of the way with a commitment to quality and a heart for service.
-              </p>
+              Whether you're in need of property restoration, renovation, or expansion, we are dedicated to delivering quality services that reflect our core values—honesty, transparency, and respect for the communities we serve. From concept to completion, we stand ready to guide you through every step of the process with a commitment to excellence.              </p>
             </div>
           </div>
           <div className="lg:w-1/2 flex justify-center lg:justify-end">
             <Image
-              src="/logos/NextGeneration/1.svg"
+              src="/logos/NPGLogo002.png"
               alt="Next Generation Properties Logo"
-              width={400}
-              height={400}
-              className="rounded-full bg-gray-600 shadow-lg"
+              width={600}
+              height={600}
             />
           </div>
         </div>

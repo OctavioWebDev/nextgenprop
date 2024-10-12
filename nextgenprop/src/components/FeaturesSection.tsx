@@ -20,38 +20,23 @@ const FeaturesSection = () => {
   const features = [
     {
       imageSrc: "/images/Maccord&Central/IMG_8277.JPG",
-      title: "Custom Construction Solutions",
-      description: "We provide tailored construction services to meet the specific needs of your commercial project. From new builds to renovations, our team ensures that every detail aligns with your business objectives and vision."
-    },
-    {
-      imageSrc: "/images/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg",
-      title: "Comprehensive Project Management",
-      description: "Our experienced project managers oversee every phase of your construction project. We manage timelines, budgets, and quality control to ensure a smooth and successful completion."
-    },
-    {
-      imageSrc: "/images/Maccord&Central/IMG_8279.JPG",
-      title: "Facility Maintenance and Upgrades",
-      description: "Beyond construction, we offer ongoing maintenance and upgrade services to keep your commercial facilities in top condition. Whether you need repairs, updates, or routine maintenance, we are here to support your business."
+      title: "Property Restoration",
+      description: "We provide expert property restoration services, ensuring that your commercial space is restored to its optimal condition after damage or wear, with attention to detail and high-quality craftsmanship."
     },
     {
       imageSrc: "/images/Maccord&Central/IMG_8491.JPG",
-      title: "Tenant Improvement Services",
-      description: "We specialize in tenant improvements, providing custom build-outs and modifications to existing commercial spaces. Whether you're adapting a space for a new tenant or upgrading it to better suit your business needs, we deliver results that align with your vision."
+      title: "Property Expansion Services",
+      description: "We specialize in property expansion, allowing you to adapt your space as your business grows. Our team ensures seamless integration of new spaces into existing properties."
     },
     {
-      imageSrc: "/images/mediamodifier-I3HPUolh5hA-unsplash.jpg",
-      title: "Pre-Construction Planning",
-      description: "Our pre-construction services include site evaluation, budgeting, and planning to ensure your project is set up for success from the start. We work with you to anticipate challenges and develop strategies that keep your project on track."
+      imageSrc: "/images/Maccord&Central/IMG_8279.JPG",
+      title: "Facility Renovation and Upgrades",
+      description: "Our renovation and upgrade services help enhance the functionality and appearance of your property, ensuring that it meets the evolving needs of your business."
     },
-    {
-      imageSrc: "/images/NagoyaPerrysburg/NAGOYA PERRYSBURG.jpg",
-      title: "Design-Build Services",
-      description: "We offer integrated design-build services, streamlining the construction process by combining the design and construction phases under one contract. This approach ensures cohesive project management, faster completion times, and cost savings for our clients."
-    }
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl text-black font-bold text-center mb-12">Our Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
