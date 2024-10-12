@@ -14,7 +14,7 @@ const LogoSection = () => {
           </a>
         ))}
       </div>
-      <div className="text-center mt-4 text-yellow-400">
+      <div className="text-center mt-4 text-yellow-300">
         &copy; {new Date().getFullYear()} Next Generation Properties. All rights reserved.
       </div>
     </div>

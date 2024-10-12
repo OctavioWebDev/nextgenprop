@@ -62,6 +62,12 @@ const photoData: Photo[][] = [
       description: 'NagoyaPerrysburg',
       date: new Date('2023-07-15'),
     },
+    {
+      id: '8',
+      url: '/images/IMG_6491.png',
+      description: 'NagoyaPerrysburg',
+      date: new Date('2023-07-15'),
+    },
   ],
 ]
 
