@@ -18,7 +18,7 @@ interface MapProps {
   center: [number, number];
   zoom: number;
   markerPosition: [number, number];
-  popupText: string;
+  popupText: React.ReactNode;
 }
 
 const Map: React.FC<MapProps> = ({ center, zoom, markerPosition, popupText }) => {
