@@ -11,7 +11,6 @@ interface Photo {
   id: string
   url: string
   description: string
-  date: Date
 }
 
 const photoData: Photo[][] = [
@@ -19,54 +18,46 @@ const photoData: Photo[][] = [
     {
       id: '1',
       url: '/images/BenchMark/20171106-183809-largejpg.jpg',
-      description: 'BenchMark',
-      date: new Date('2023-05-01'),
+      description: 'Benchmark',
     },
     {
       id: '2',
       url: '/images/BenchMark/l.jpg',
-      description: 'BenchMark',
-      date: new Date('2023-05-15'),
+      description: 'Benchmark',
     },
   ],
   [
     {
       id: '3',
       url: '/images/BenchMark/ls.jpg',
-      description: 'BenchMark',
-      date: new Date('2023-06-01'),
+      description: 'Benchmark',
     },
     {
       id: '4',
       url: '/images/Maccord&Central/IMG_8277.JPG',
-      description: 'Maccord&Central',
-      date: new Date('2023-06-15'),
+      description: 'McCord & Central',
     },
   ],
   [
     {
       id: '5',
       url: '/images/Maccord&Central/IMG_8279.JPG',
-      description: 'Maccord&Central',
-      date: new Date('2023-07-01'),
+      description: 'McCord & Central',
     },
     {
       id: '6',
       url: '/images/Maccord&Central/IMG_8491.JPG',
-      description: 'Maccord&Central',
-      date: new Date('2023-07-15'),
+      description: 'McCord & Central',
     },
     {
       id: '7',
       url: '/images/NagoyaPerrysburg/NAGOYA PERRYSBURG.jpg',
-      description: 'NagoyaPerrysburg',
-      date: new Date('2023-07-15'),
+      description: 'Nagoya Perrysburg',
     },
     {
       id: '8',
       url: '/images/IMG_6491.png',
-      description: 'NagoyaPerrysburg',
-      date: new Date('2023-07-15'),
+      description: 'Nagoya Perrysburg',
     },
   ],
 ]

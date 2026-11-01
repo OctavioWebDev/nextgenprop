@@ -71,7 +71,7 @@ export default function ContactForm() {
                     <p className="mb-8 text-gray-300 text-center">
                         Have a commercial construction project in mind? We're here to bring your vision to life with expert craftsmanship and dedicated service. Whether you're planning a new build, renovation, or expansion, reach out to us today to discuss how we can make your project a success. Let’s create something exceptional together.
                     </p>
-                    <form onSubmit={handleSubmit}>
+                    <form ref={formRef} onSubmit={handleSubmit}>
                         <div className="mb-4">
                             <label htmlFor="firstName" className="block text-white mb-2">First Name:</label>
                             <input
@@ -101,7 +101,11 @@ export default function ContactForm() {
                         <div className="mb-4">
                             <label htmlFor="phone" className="block text-white mb-2">Phone Number:</label>
                             <input
-                                type="text"
+                                type="tel"
+                                inputMode="tel"
+                                autoComplete="tel"
+                                pattern="[0-9\(\)\+\-\.\s]{7,}"
+                                title="Please enter a valid phone number"
                                 id="phone"
                                 name="phone"
                                 className="w-full p-2 bg-gray-950 opacity-50 border-black rounded"
@@ -133,6 +137,7 @@ export default function ContactForm() {
                                 value={formState.message}
                                 onChange={handleChange}
                                 placeholder='Message'
+                                rows={6}
                                 required
                             ></textarea>
                         </div>
@@ -140,8 +145,6 @@ export default function ContactForm() {
                             Send
                         </button>
                     </form>
-
-                    <p className="mt-4 text-gray-300 text-xs">By submitting this form you agree to our <a href="/terms" className="text-red-700 underline">terms and conditions</a> and our <a href="/privacy" className="text-red-700 underline">privacy policy</a> which explains how we may collect, use and disclose your personal information including to third parties.</p>
 
                     {submitStatus.message && (
                         <p className={`mt-4 text-sm ${submitStatus.isError ? 'text-red-500' : 'text-green-500'}`}>
@@ -151,17 +154,15 @@ export default function ContactForm() {
                 </div>
                 <div className="flex justify-between items-center w-full max-w-2xl mt-8">
                     <div className="flex items-center">
-                        <span className="icon-email mr-2"></span>
                         <div>
                             <p className="text-sm">Email us:</p>
-                            <p className="text-gray-300">icm@iwctoledo.com</p>
+                            <a href="mailto:icm@iwctoledo.com" className="text-gray-300 underline">icm@iwctoledo.com</a>
                         </div>
                     </div>
                     <div className="flex items-center">
-                        <span className="icon-phone mr-2"></span>
                         <div>
                             <p className="text-sm">Call us:</p>
-                            <p className="text-gray-300">+1 (419) 381-1855</p>
+                            <a href="tel:+14193811855" className="text-gray-300 underline">+1 (419) 381-1855</a>
                         </div>
                     </div>
                 </div>

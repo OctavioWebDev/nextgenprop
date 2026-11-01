@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Alice } from 'next/font/google';
 import "./globals.css";
-import Head from "next/head";
 
 const alice = Alice({
   weight: '400',
@@ -10,7 +9,7 @@ const alice = Alice({
 
 export const metadata: Metadata = {
   title: "Next Generation Properties",
-  description: "A good person leaves an inheritance for their children’s children, but a sinner’s wealth is stored up for the righteous. Proverbs 13:22",
+  description: "Commercial property maintenance, restoration, mitigation, remodeling and repair in Toledo, Ohio. Next Generation Properties, founded in 2016.",
 };
 
 export default function RootLayout({
@@ -20,9 +19,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-      <link rel="icon" href="/logos/NextGeneration/LgNPGLogo.png" sizes="500x500" type="image/png" />
-      </Head>
       <body className={alice.className}>
         {children}
       </body>
