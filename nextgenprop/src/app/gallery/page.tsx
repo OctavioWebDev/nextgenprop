@@ -4,6 +4,9 @@ import GalleryGrid from '@/components/GalleryGrid';
 import LogoSection from '@/components/LogoSection';
 import { getCachedPhotos } from '@/lib/gallery/cached';
 
+// Also picks up gallery changes on its own every hour (see lib/gallery/cached.ts).
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: 'Project Gallery | Next Generation Properties',
   description: 'Photos of commercial restoration, renovation and expansion projects by Next Generation Properties in Toledo, Ohio.',

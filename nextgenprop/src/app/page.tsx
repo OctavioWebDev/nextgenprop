@@ -10,6 +10,9 @@ import { getCachedPhotos } from '@/lib/gallery/cached';
 import type { GalleryPhoto } from '@/lib/gallery/types';
 import LogoSection from '../components/LogoSection';
 
+// Also picks up gallery changes on its own every hour (see lib/gallery/cached.ts).
+export const revalidate = 3600;
+
 // The home strip shows the newest photos, dealt across its three flipping tiles.
 function groupForStrip(photos: GalleryPhoto[], tiles = 3, perTile = 3): GalleryPhoto[][] {
   const groups: GalleryPhoto[][] = Array.from({ length: tiles }, () => []);
