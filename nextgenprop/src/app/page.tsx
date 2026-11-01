@@ -4,65 +4,21 @@ import BenefitsSection from '../components/BenefitsSection';
 import FeaturesSection from '../components/FeaturesSection';
 import TestimonialSection from '../components/TestimonialSection';
 import CallToActionSection from '../components/CallToActionSection';
+import Link from 'next/link';
 import PhotoGalleryComponent from '@/components/photo-gallary';
+import { getCachedPhotos } from '@/lib/gallery/cached';
+import type { GalleryPhoto } from '@/lib/gallery/types';
 import LogoSection from '../components/LogoSection';
 
-interface Photo {
-  id: string
-  url: string
-  description: string
+// The home strip shows the newest photos, dealt across its three flipping tiles.
+function groupForStrip(photos: GalleryPhoto[], tiles = 3, perTile = 3): GalleryPhoto[][] {
+  const groups: GalleryPhoto[][] = Array.from({ length: tiles }, () => []);
+  photos.slice(0, tiles * perTile).forEach((photo, i) => groups[i % tiles].push(photo));
+  return groups.filter((g) => g.length > 0);
 }
 
-const photoData: Photo[][] = [
-  [
-    {
-      id: '1',
-      url: '/images/BenchMark/20171106-183809-largejpg.jpg',
-      description: 'Benchmark',
-    },
-    {
-      id: '2',
-      url: '/images/BenchMark/l.jpg',
-      description: 'Benchmark',
-    },
-  ],
-  [
-    {
-      id: '3',
-      url: '/images/BenchMark/ls.jpg',
-      description: 'Benchmark',
-    },
-    {
-      id: '4',
-      url: '/images/Maccord&Central/IMG_8277.JPG',
-      description: 'McCord & Central',
-    },
-  ],
-  [
-    {
-      id: '5',
-      url: '/images/Maccord&Central/IMG_8279.JPG',
-      description: 'McCord & Central',
-    },
-    {
-      id: '6',
-      url: '/images/Maccord&Central/IMG_8491.JPG',
-      description: 'McCord & Central',
-    },
-    {
-      id: '7',
-      url: '/images/NagoyaPerrysburg/NAGOYA PERRYSBURG.jpg',
-      description: 'Nagoya Perrysburg',
-    },
-    {
-      id: '8',
-      url: '/images/IMG_6491.png',
-      description: 'Nagoya Perrysburg',
-    },
-  ],
-]
-
-export default function Home() {
+export default async function Home() {
+  const photos = await getCachedPhotos();
   return (
     <main>
       <HeroSection />
@@ -70,7 +26,12 @@ export default function Home() {
       <BenefitsSection />
       <FeaturesSection />
       <TestimonialSection />
-      <PhotoGalleryComponent photos={photoData} />
+      <PhotoGalleryComponent photos={groupForStrip(photos)} />
+      <div className="bg-gray-700 py-8 text-center">
+        <Link href="/gallery" className="bg-gray-800 hover:bg-gray-950 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300">
+          See All Project Photos
+        </Link>
+      </div>
       <CallToActionSection />
       <LogoSection />
     </main>
