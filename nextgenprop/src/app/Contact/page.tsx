@@ -3,7 +3,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import emailjs from 'emailjs-com';
 import Link from 'next/link';
-import { takeContactPrefill } from '@/lib/contact-prefill';
 
 export default function ContactForm() {
     const formRef = useRef<HTMLFormElement | null>(null);
@@ -19,12 +18,6 @@ export default function ContactForm() {
         phone: '',
         message: ''
     });
-
-    // The service request helper on the home page can send a summary over.
-    useEffect(() => {
-        const message = takeContactPrefill();
-        if (message) setFormState(prevState => ({ ...prevState, message }));
-    }, []);
 
     const [submitStatus, setSubmitStatus] = useState({
         message: '',

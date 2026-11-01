@@ -6,7 +6,6 @@ import TestimonialSection from '../components/TestimonialSection';
 import CallToActionSection from '../components/CallToActionSection';
 import PhotoGalleryComponent from '@/components/photo-gallary';
 import LogoSection from '../components/LogoSection';
-import ServiceRequestHelper from '../components/ServiceRequestHelper';
 
 interface Photo {
   id: string
@@ -70,7 +69,6 @@ export default function Home() {
       <AboutSection />
       <BenefitsSection />
       <FeaturesSection />
-      <ServiceRequestHelper />
       <TestimonialSection />
       <PhotoGalleryComponent photos={photoData} />
       <CallToActionSection />
